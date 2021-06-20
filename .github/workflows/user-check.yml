@@ -1,0 +1,14 @@
+name: user-checks
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      run: npm test
+      run: npm run lint
