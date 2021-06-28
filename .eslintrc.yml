@@ -3,6 +3,8 @@
 plugins:
   # https://github.com/jest-community/eslint-plugin-jest
   - jest
+  - testing-library
+  - jest-dom
 
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:

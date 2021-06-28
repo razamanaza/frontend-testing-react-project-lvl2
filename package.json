@@ -2,7 +2,9 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/razamanaza/frontend-testing-react-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/razamanaza/frontend-testing-react-project-lvl2/actions)",
-  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint ./__tests__"
@@ -21,11 +23,19 @@
     "@hexlet/react-todo-app-with-backend": "^0.10.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
     "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
     "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-testing-library": "^4.6.0",
     "jest": "^27.0.4"
   }
 }
